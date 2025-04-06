@@ -1,0 +1,116 @@
+body, html{
+    background-color: #171413;
+    height: 100%; /*Asegura que el body ocupe todo el alto de la ventana*/
+    margin: 0; /*Elimina márgenes por defecto*/
+    display: flex;
+    justify-content: center; /*Centra horizontalmente*/
+    align-items: center; /*Centra verticalmente */
+}
+
+@media(max-width:768px){
+    .Container{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        order: 3;
+    }
+}
+
+
+fotoPerfil, nombre, carrera, gitHub, instagram, linkedIn, correo, telefono{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+fotoPerfil{
+    padding: 80px;
+    width: 100px;
+    height: 100px;
+    background-color: #ed1139;
+    border-radius: 100%;
+    text-align: center;
+    color:aqua;
+    
+}
+
+nombre{
+    background-color: none;
+    border-radius: 15px;
+    text-align: center;
+    color:aqua;
+   
+}
+
+carrera{
+    background-color: none;
+    border-radius: 15px;
+    text-align: center;
+    color:aqua;
+}
+
+gitHub{
+    padding: 5px;
+    background-color: #ed1139;
+    border-radius: 15px;
+    text-align: center;
+    color:aqua;
+    margin: 12px;
+}
+
+instagram{
+    padding: 5px;
+    background-color: #ed1139;
+    border-radius: 15px;
+    text-align: center;
+    color:aqua;
+    margin: 12px;
+}
+
+linkedIn{
+    padding: 5px;
+    background-color: #ed1139;
+    border-radius: 15px;
+    text-align: center;
+    color:aqua;
+    margin: 12px;
+}
+
+correo{
+    padding: 5px;
+    background-color: #ed1139;
+    border-radius: 15px;
+    text-align: center;
+    color:aqua;
+    margin: 12px;
+}
+
+telefono{
+    padding: 5px;
+    background-color: #ed1139;
+    border-radius: 15px;
+    text-align: center;
+    color:aqua;
+    margin: 12px;
+}
+
+
+
+.Container{
+    display: grid;
+    grid-template-areas: 
+    'fotoPerfil'
+    'nombre'
+    'carrera'
+    'gitHub'
+    'instagram'
+    'linkedIn'
+    'correo'
+    'telefono';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+
