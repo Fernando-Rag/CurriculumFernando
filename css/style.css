@@ -185,17 +185,17 @@ linkedIn:hover{
     z-index: 1;
 }
 
-/*Darle forma al contenido del popup*/
+/*darle forma al contenido del popup*/
 
 .popup-content {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    max-height: 80vh; /* Limita la altura máxima del popup a un porcentaje de la ventana */
-    text-align: left; /* Alineación del texto a la izquierda */
-    overflow-y: auto; /* Hace que el contenido dentro del popup sea desplazable verticalmente */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del popup */
+    max-height: 80vh;     /*limita la altura máxima del popup*/
+    text-align: left;     /*alineación del texto a la izquierda*/
+    overflow-y: auto;     /*hace que el contenido dentro del popup sea desplazable verticalmente*/
+    box-sizing: border-box;    /*asegura que el padding no afecte el tamaño total del popup */
 }
 
 .popup-content ul {
@@ -207,7 +207,7 @@ linkedIn:hover{
     margin-bottom: 8px;
 }
 
-/*Click para que se cierre el popup*/
+/*click para que se cierre el popup*/
 
 .popup .close {
     color: black;
@@ -259,6 +259,7 @@ telefono:hover{
     'gitHub'
     'instagram'
     'linkedIn'
+    "infoPersonal"
     'correo'
     'telefono';
     grid-gap: 10px;
