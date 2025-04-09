@@ -9,15 +9,71 @@
 <body>
     <div class="Contenedor">
         <fotoPerfil></fotoPerfil>
-        <nombre>Fernando Isaac Orellana Diaz</nombre>
-        <carrera>Ingeniero en Informatica</carrera>  
+        <nombre>
+            Fernando Isaac Orellana Diaz</nombre>
+        <carrera>
+            Ingeniero en Informatica</carrera>  
         <gitHub class="gitHub" onclick="window.location.href='https://github.com/Fernando-Rag';">
             GitHub</gitHub>
         <instagram class="instagram" onclick="window.location.href='https://www.instagram.com/only_partly_6six6/';">
             Instagram</instagram>
-        <linkedIn class="linkedIn" onclick="window.location.href='https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile';">
+        <linkedIn class="linkedIn" onclick="window.location.href='https://www.linkedin.com/in/fernando-orellana-d%C3%ADaz-22258435a/';">
             LinkedIn</linkedIn>
-        <correo>fernando.orellana21@inacapmail.cl</correo>
-        <telefono>+56996776572</telefono>    
+        <div class="infoPersonal" onclick="mostrarPopup()">
+            Info_Personal</div>
+        <correo>
+            fernando.orellana21@inacapmail.cl</correo>
+        <telefono>
+            +56996776572</telefono>
+        <div id="popup" class="popup" onclick="cerrarPopup()">
+            <div class="popup-content">
+                <span class="close" onclick="cerrarPopup()">&times;</span>
+                <p><strong>Hola, soy Fernando Orellana Diaz</strong></p>
+    
+                <h3>Perfil Profesional</h3>
+                <p>Soy una persona muy proactiva, siempre me gusta dar un poco más. Tengo habilidades de liderazgo, mantengo una mente fría ante problemas que se presentan y estoy dispuesto a buscar más de una forma para solucionarlos. Me considero una persona bastante responsable y organizada.</p>
+
+                <h3>Experiencia Laboral</h3>
+                <ul>
+                    <li>Guardia</li>
+                    <li>Enfermero</li>
+                    <li>Ejército</li>
+                    <li>Construcción</li>
+                </ul>
+            
+                <h3>Educación</h3>
+                <ul>
+                    <li>Técnico en Enfermería</li>
+                    <li>Estudiando Ingeniería en Informática</li>
+                </ul>
+            
+                <h3>Habilidades Técnicas y Personales</h3>
+                <ul>
+                    <li>Liderazgo</li>
+                    <li>Buena toma de decisiones bajo presión</li>
+                    <li>Organizado</li>
+                    <li>Autoexigente</li>
+                    <li>Adaptabilidad</li>
+                    <li>Creatividad</li>
+                </ul>
+            
+                <h3>Referencias</h3>
+                <ul>
+                    <li>Inacap</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            /*Función para mostrar el popup*/
+            function mostrarPopup() {
+                document.getElementById('popup').style.display = 'flex';
+            }
+            /*Función para cerrar el popup*/
+        function cerrarPopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+        </script> 
+    </div>      
 </body>
 </html>
